@@ -1,0 +1,133 @@
+#wd-search-container { 
+    padding:0; 
+    margin:0; 
+    width: 90%;
+    float: left; 
+}
+
+.wd-search-bar {
+    position: relative;
+    width: 100%;
+    height: 35px;
+    border-radius: 50px;
+    border: none;
+    margin:0; 
+    padding-left: 40px;
+    background-color: #ccccccaa;
+    outline: none;
+    bottom:20px;
+    left: 30px;
+
+}
+
+.wd-search-icon {
+    position: relative;
+    top: 7px;
+    left: 40px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    opacity: 0.6;
+    font-size: 15px;
+}
+
+.wd-gear-icon {
+    position: relative;
+    bottom: 20px;
+    left: 90px;
+    width: 0;
+    text-align: left;
+    float: right;
+    font-size: 30px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+.wd-nav-container {
+    width: 100%;
+    position: relative;
+  }
+
+  .wd-nav-tabs {
+    position: relative; 
+    float: left; 
+  }
+
+  .wd-nav-tabs a {
+    text-decoration: none; 
+    color: black; 
+  }
+  
+
+  .wd-nav-horizontal {
+    display: inline-block;
+    margin-right: 140px; 
+  }
+
+  .wd-selected {
+    padding: 10px;
+    border-bottom: blue solid;
+    font-weight: bold;
+    width: 55px;
+  }
+
+  .wd-header-container{
+    position: relative;
+   }
+  
+  .wd-header-text{
+    position: relative;
+    text-align: left;
+    color: white;
+    bottom: 65px;
+    left: 8px;
+  }
+
+.wd-trending-list {
+    list-style-type: none;
+}
+
+.wd-trending-title {
+    font-size: 14px;
+    position: relative;
+    color: gray;
+}
+
+.wd-trending-topic {
+    font-size: 18px;
+    position: relative;
+    color: black;
+    font-weight: bold;
+}
+
+.wd-trending-stats {
+    font-size: 14px;
+    position: relative;
+    color: gray;
+}
+
+.fas.fa-ellipsis-h {
+    font-size: 15px;
+    position: absolute;
+    right: 30px;
+    color: gray;
+
+}
+
+.wd-trending-container {
+    position: relative;
+    width:100%;
+    height:10%;
+    padding-bottom: 10px;
+}
+
+.wd-trending-list {
+    position: relative;
+    width: 100%;
+    left: -10px;
+}
