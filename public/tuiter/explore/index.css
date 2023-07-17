@@ -1,8 +1,7 @@
-#wd-search-container { 
+.wd-search-container { 
     padding:0; 
     margin:0; 
     width: 90%;
-    float: left; 
 }
 
 .wd-search-bar {
@@ -55,14 +54,12 @@
 
   .wd-nav-tabs {
     position: relative; 
-    float: left; 
   }
 
   .wd-nav-tabs a {
     text-decoration: none; 
     color: black; 
   }
-  
 
   .wd-nav-horizontal {
     display: inline-block;
@@ -130,4 +127,9 @@
     position: relative;
     width: 100%;
     left: -10px;
+}
+
+
+.wd-text-gray {
+  color: gray;
 }
