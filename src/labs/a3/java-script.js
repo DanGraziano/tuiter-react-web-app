@@ -11,6 +11,7 @@ import WorkingWithArrays from "./working-with-arrays";
 import ArrayIndexAndLength from "./array-index-and-length";
 import AddingAndRemovingDataToFromArrays from "./adding-and-removing-data-to-from-array";
 import ForLoops from "./for-loops";
+import MapFunction from "./map-function";
 
 function JavaScript() {
     console.log('Hello World');
@@ -30,6 +31,7 @@ function JavaScript() {
           <ArrayIndexAndLength/>    
           <AddingAndRemovingDataToFromArrays/>
           <ForLoops/>
+          <MapFunction/>
        </div>
     );
  }
