@@ -16,6 +16,7 @@ import JSONStringify from "./json-stringify";
 import FindFunction from "./find-function";
 import FindIndex from "./find-index";
 import FilterFunction from "./filter-function";
+import TemplateLiterals from "./template-literals";
 
 function JavaScript() {
     console.log('Hello World');
@@ -40,6 +41,7 @@ function JavaScript() {
           <FindFunction/>
           <FindIndex/>
           <FilterFunction/>
+          <TemplateLiterals/>
        </div>
     );
  }
