@@ -1,6 +1,7 @@
 import VariablesAndConstants from "./variables-and-constants";
 import VariableTypes from "./variable-types";
 import BooleanVariables from "./boolean-variables";
+import IfElse from "./if-else";
 
 function JavaScript() {
     console.log('Hello World');
@@ -10,6 +11,7 @@ function JavaScript() {
           <VariablesAndConstants/>
           <VariableTypes/>
           <BooleanVariables/>
+          <IfElse/>
        </div>
     );
  }
