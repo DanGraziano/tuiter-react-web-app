@@ -10,6 +10,7 @@ import FunctionParenthesisAndParameters from "./function-parathesis-and-paramete
 import WorkingWithArrays from "./working-with-arrays";
 import ArrayIndexAndLength from "./array-index-and-length";
 import AddingAndRemovingDataToFromArrays from "./adding-and-removing-data-to-from-array";
+import ForLoops from "./for-loops";
 
 function JavaScript() {
     console.log('Hello World');
@@ -28,6 +29,7 @@ function JavaScript() {
           <WorkingWithArrays/>  
           <ArrayIndexAndLength/>    
           <AddingAndRemovingDataToFromArrays/>
+          <ForLoops/>
        </div>
     );
  }
