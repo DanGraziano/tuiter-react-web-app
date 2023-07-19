@@ -6,6 +6,7 @@ import TernaryOperator from "./ternary-operator";
 import ES5Functions from "./es5-functions";
 import ArrowFunctions from "./arrow-functions";
 import ImpliedReturn from "./implied-return";
+import FunctionParenthesisAndParameters from "./function-parathesis-and-parameters";
 
 function JavaScript() {
     console.log('Hello World');
@@ -20,6 +21,7 @@ function JavaScript() {
           <ES5Functions/>
           <ArrowFunctions/>
           <ImpliedReturn/>
+          <FunctionParenthesisAndParameters/>
        </div>
     );
  }
