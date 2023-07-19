@@ -4,6 +4,7 @@ import BooleanVariables from "./boolean-variables";
 import IfElse from "./if-else";
 import TernaryOperator from "./ternary-operator";
 import ES5Functions from "./es5-functions";
+import ArrowFunctions from "./arrow-functions";
 
 function JavaScript() {
     console.log('Hello World');
@@ -16,6 +17,7 @@ function JavaScript() {
           <IfElse/>
           <TernaryOperator/>
           <ES5Functions/>
+          <ArrowFunctions/>
        </div>
     );
  }
