@@ -3,19 +3,8 @@ import VariableTypes from "./variable-types";
 import BooleanVariables from "./boolean-variables";
 import IfElse from "./if-else";
 import TernaryOperator from "./ternary-operator";
-import ES5Functions from "./es5-functions";
-import ArrowFunctions from "./arrow-functions";
-import ImpliedReturn from "./implied-return";
-import FunctionParenthesisAndParameters from "./function-parathesis-and-parameters";
+import WorkingWithFunctions from "./working-with-functions";
 import WorkingWithArrays from "./working-with-arrays";
-import ArrayIndexAndLength from "./array-index-and-length";
-import AddingAndRemovingDataToFromArrays from "./adding-and-removing-data-to-from-array";
-import ForLoops from "./for-loops";
-import MapFunction from "./map-function";
-import JSONStringify from "./json-stringify";
-import FindFunction from "./find-function";
-import FindIndex from "./find-index";
-import FilterFunction from "./filter-function";
 import TemplateLiterals from "./template-literals";
 
 function JavaScript() {
@@ -28,19 +17,8 @@ function JavaScript() {
           <BooleanVariables/>
           <IfElse/>
           <TernaryOperator/>
-          <ES5Functions/>
-          <ArrowFunctions/>
-          <ImpliedReturn/>
-          <FunctionParenthesisAndParameters/>
+          <WorkingWithFunctions/>
           <WorkingWithArrays/>  
-          <ArrayIndexAndLength/>    
-          <AddingAndRemovingDataToFromArrays/>
-          <ForLoops/>
-          <MapFunction/>
-          <JSONStringify/>
-          <FindFunction/>
-          <FindIndex/>
-          <FilterFunction/>
           <TemplateLiterals/>
        </div>
     );

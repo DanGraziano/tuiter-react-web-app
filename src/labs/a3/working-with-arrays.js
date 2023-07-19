@@ -1,3 +1,12 @@
+import ArrayIndexAndLength from "./array-index-and-length"
+import AddingAndRemovingDataToFromArrays from "./adding-and-removing-data-to-from-array";
+import ForLoops from "./for-loops"
+import MapFunction from "./map-function"
+import JSONStringify from "./json-stringify"
+import FindFunction from "./find-function"
+import FindIndex from "./find-index"
+import FilterFunction from "./filter-function"
+
 function WorkingWithArrays(){
 
     var functionScoped = 2;
@@ -16,6 +25,14 @@ function WorkingWithArrays(){
             numberArray1 = {numberArray1}<br />
             stringArray1 = {stringArray1}<br/>
             variableArray1 = {variableArray1}<br/>
+            <ArrayIndexAndLength/>
+            <AddingAndRemovingDataToFromArrays/>
+            <ForLoops/>
+            <MapFunction/>
+            <JSONStringify/>
+            <FindFunction/>
+            <FindIndex/>
+            <FilterFunction/>
         </>
     ); 
 } 
