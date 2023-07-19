@@ -7,6 +7,9 @@ import ES5Functions from "./es5-functions";
 import ArrowFunctions from "./arrow-functions";
 import ImpliedReturn from "./implied-return";
 import FunctionParenthesisAndParameters from "./function-parathesis-and-parameters";
+import WorkingWithArrays from "./working-with-arrays";
+import ArrayIndexAndLength from "./array-index-and-length";
+import AddingAndRemovingDataToFromArrays from "./adding-and-removing-data-to-from-array";
 
 function JavaScript() {
     console.log('Hello World');
@@ -22,6 +25,9 @@ function JavaScript() {
           <ArrowFunctions/>
           <ImpliedReturn/>
           <FunctionParenthesisAndParameters/>
+          <WorkingWithArrays/>  
+          <ArrayIndexAndLength/>    
+          <AddingAndRemovingDataToFromArrays/>
        </div>
     );
  }
