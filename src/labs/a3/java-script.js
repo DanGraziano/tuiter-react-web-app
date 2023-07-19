@@ -12,6 +12,10 @@ import ArrayIndexAndLength from "./array-index-and-length";
 import AddingAndRemovingDataToFromArrays from "./adding-and-removing-data-to-from-array";
 import ForLoops from "./for-loops";
 import MapFunction from "./map-function";
+import JSONStringify from "./json-stringify";
+import FindFunction from "./find-function";
+import FindIndex from "./find-index";
+import FilterFunction from "./filter-function";
 
 function JavaScript() {
     console.log('Hello World');
@@ -32,6 +36,10 @@ function JavaScript() {
           <AddingAndRemovingDataToFromArrays/>
           <ForLoops/>
           <MapFunction/>
+          <JSONStringify/>
+          <FindFunction/>
+          <FindIndex/>
+          <FilterFunction/>
        </div>
     );
  }
