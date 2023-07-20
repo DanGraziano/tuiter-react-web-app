@@ -1,4 +1,4 @@
-import TuitSummaryList from "./tuit-summary-list";
+import TuitSummaryList from "../tuit-summary-list";
 
 function ExploreScreen() {
     return (
