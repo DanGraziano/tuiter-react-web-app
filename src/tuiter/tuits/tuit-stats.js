@@ -7,11 +7,11 @@ const TuitStats = ({ tuit_stats, onToggleLike }) => {
     <div className="row">
       <div className="col">
         <FontAwesomeIcon icon={faReply} />
-        <span className="ml-1">{tuit_stats.replies}</span>
+        <span className="ml-1"> {tuit_stats.replies}</span>
       </div>
       <div className="col">
         <FontAwesomeIcon icon={faRetweet} />
-        <span className="ml-1">{tuit_stats.retuits}</span>
+        <span className="ml-1"> {tuit_stats.retuits}</span>
       </div>
       <div className="col">
         <FontAwesomeIcon
@@ -19,7 +19,7 @@ const TuitStats = ({ tuit_stats, onToggleLike }) => {
           style={{ color: tuit_stats.liked ? "#ff2600" : "grey" }}
           onClick={onToggleLike}
         />
-        <span className="ml-1">{tuit_stats.likes}</span>
+        <span className="ml-1"> {tuit_stats.likes}</span>
       </div>
       <div className="col">
         <FontAwesomeIcon icon={faShareNodes} />

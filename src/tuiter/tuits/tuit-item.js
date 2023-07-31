@@ -3,6 +3,9 @@ import { useDispatch } from "react-redux";
 import "bootstrap/dist/css/bootstrap.min.css";
 import TuitStats from "./tuit-stats";
 import { deleteTuit, likeTuit } from "../reducers/tuits-reducer";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faCircleCheck} from "@fortawesome/free-solid-svg-icons";
+import "./style.css"; 
 
 const TuitItem = ({ tuit }) => {
   const dispatch = useDispatch();
@@ -30,12 +33,17 @@ const TuitItem = ({ tuit }) => {
           />
         </div>
         <div className="col-10">
-          <div>
-            <i
-              className="bi bi-x-lg float-end"
-              onClick={() => deleteTuitHandler(tuit._id)}
-            ></i>
-          </div>
+          
+        <div>
+          <strong>{tuit.userName} </strong> 
+        <FontAwesomeIcon icon={faCircleCheck} style={{color: "#005eff",}} />
+          <span className="text-secondary"> {tuit.handle} <i className="bi bi-dot wd-period"></i> {tuit.time} </span>
+          <i 
+            className="bi bi-x-lg float-end"
+            onClick={() => deleteTuitHandler(tuit._id)}
+          ></i>
+        </div>
+
           <div>{tuit.tuit}</div>
           <br />
           <div>
