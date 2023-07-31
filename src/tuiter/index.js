@@ -25,7 +25,7 @@ function Tuiter() {
   <div>
      <Nav/>
      <div className="row mt-2">
-     <div className="col-2 col-md-2 col-lg-1 col-xl-2">
+     <div className="col-2 col-lg-2 col-xl-2 col-xxl-2 col-sm-2">
      <NavigationSidebar active="home" />
      </div>
       <div
@@ -43,20 +43,8 @@ function Tuiter() {
             <Route path="/more" element={<MoreScreen />} />
           </Routes>
        </div>
-       <div className="col-3">
+       <div className="col-lg-3 col-xl-3 col-xxl-3 ps-3 d-none d-lg-block">
         <WhoToFollowList/>
-        
-        {/*
-        <WhoToFollowListItem />
-        <WhoToFollowListItem who={{
-          userName: "Tesla",
-          handle: "tesla",
-          avatarIcon: "tesla.png" }} />
-        <WhoToFollowListItem who={{
-          userName: "SpaceX",
-          handle: "spacex",
-          avatarIcon: "spacex.png", }} />
-          */}
        </div>
      </div>
    </div>
