@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import "bootstrap/dist/css/bootstrap.min.css";
 import TuitStats from "./tuit-stats";
 import { deleteTuit, likeTuit } from "../reducers/tuits-reducer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
