@@ -17,7 +17,9 @@ const TuitStats = ({ tuit_stats, onToggleLike }) => {
         <FontAwesomeIcon
           icon={faHeart}
           style={{ color: tuit_stats.liked ? "#ff2600" : "grey" }}
-          onClick={onToggleLike}
+          onClick={() =>
+            dispatch(updateTuitThunk({ ...tuit, likes: tuit.likes + 1 }))
+          }
         />
         <span className="ml-1"> {tuit_stats.likes}</span>
       </div>
