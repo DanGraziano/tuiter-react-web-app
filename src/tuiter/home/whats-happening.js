@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {createTuitThunk} from "./services/tuits-thunks";
+import {createTuitThunk} from "../services/tuits-thunks";
 import {useDispatch} from "react-redux";
 import { AiOutlinePicture} from 'react-icons/ai';
 import { MdFormatListBulleted} from 'react-icons/md';
@@ -9,6 +9,7 @@ import { BiItalic} from 'react-icons/bi';
 import { HiOutlineGif } from 'react-icons/hi2';
 import { BsEmojiSmile } from 'react-icons/bs';
 import { TbCalendarStats } from 'react-icons/tb'
+
 
 const WhatsHappening = () => {
  let [whatsHappening, setWhatsHappening] = useState('');

@@ -1,26 +1,30 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import TuitStats from "./tuit-stats";
-import {likeTuit } from "../reducers/tuits-reducer";
 import {deleteTuitThunk} from "../services/tuits-thunks";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faCircleCheck} from "@fortawesome/free-solid-svg-icons";
 import "./style.css"; 
 
-const TuitItem = ({ tuit }) => {
-  const dispatch = useDispatch();
-  const deleteTuitHandler = (id) => {
-    dispatch(deleteTuitThunk(id));
-  };
-
-  // State to keep track of the liked status
-  const [liked, setLiked] = useState(tuit.liked);
-
-  // Toggles like/unlike icon  
-  const toggleLikeHandler = () => {
-    dispatch(likeTuit(tuit._id));
-    setLiked(!liked);
-  };
+const TuitItem = (
+  {
+    tuit = {"_id": 123, "topic": "Space", "userName": "SpaceX",
+    "title": "Tesla CyberTruck lands on Mars and picks up the Curiosity rover on its 6' bed",
+    "time": "2h",   "image": "../images/spacex-black.jpeg",
+    "liked": true,
+    "replies": 123,
+    "retuits": 432,
+    "likes": 12345,
+    "handle": "@spacex",
+    "tuit": "This morning at 12:34 EST Earth time. a convoy of Tesla CyberTrucks drove across the Martian landscape after picking up the Curiosity, Sojourner, Spirit, and Perseverance on their 6' beds"
+   }
+  }
+ ) => {
+ 
+   const dispatch = useDispatch();
+ const deleteTuitHandler = (id) => {
+   dispatch(deleteTuitThunk(id));
+ }
 
   return (
     <li className="list-group-item">
@@ -46,18 +50,7 @@ const TuitItem = ({ tuit }) => {
 
           <div>{tuit.tuit}</div>
           <br />
-          <div>
-            <TuitStats
-              tuit_stats={{
-                liked: tuit.liked,
-                replies: tuit.replies,
-                retuits: tuit.retuits,
-                likes: tuit.likes,
-              }}
-              // Pass the toggleLikeHandler as a prop
-              onToggleLike={toggleLikeHandler}
-            />
-          </div>
+          <div><TuitStats tuit={tuit} key={tuit._id} /></div>
         </div>
       </div>
     </li>
