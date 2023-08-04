@@ -1,9 +1,11 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import { useSelector } from "react-redux";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faHouse, faHashtag, faBell, faEnvelope, faBookmark, faList, faUser, faEllipsis } from "@fortawesome/free-solid-svg-icons";
 
 const NavigationSidebar = () => {
+  const { currentUser } = useSelector((state) => state.user);
     const { pathname } = useLocation();
     const [ignore, tuiter, active] = pathname.split("/");
     const links = ["home", "explore", "notifications", "messages", "bookmarks", "lists", "profile",  "more"];
@@ -27,6 +29,9 @@ const NavigationSidebar = () => {
             <div className="d-none d-xl-block d-xxl-block ps-2">{link}</div>
           </Link>
         ))}
+        {!currentUser && <Link className="list-group-item" to="/tuiter/login">   Login   </Link>}
+        {!currentUser && <Link className="list-group-item" to="/tuiter/register">Register</Link>}
+        { currentUser && <Link className="list-group-item" to="/tuiter/profile"> Profile </Link>}
       </div>
     );
   };
