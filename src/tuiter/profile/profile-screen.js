@@ -18,15 +18,7 @@ function ProfileScreen() {
      setProfile(payload);
    };
    loadProfile();
- }, []);
- 
-
-/* 
- useEffect(  () => {
-  dispatch(profileThunk())
-
-}, []);
-*/
+ }, [dispatch]);
 
  return (
     <div>
