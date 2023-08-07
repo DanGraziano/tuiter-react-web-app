@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faHouse,faHashtag,faBell,faEnvelope,faBookmark,faList,faUser,faEllipsis,} from "@fortawesome/free-solid-svg-icons";
@@ -23,48 +23,31 @@ const NavigationSidebar = () => {
 
   return (
     <div className="list-group">
-      {links.map((link) => (
-        <NavLink
-          to={`/tuiter/${link}`}
-          className={`text-capitalize list-group-item list-group-item-action d-flex align-items-center`}
-          activeClassName="active"
-          key={link}
-        >
-          <FontAwesomeIcon icon={icons[link]} className="me-2" />
-          {link}
-        </NavLink>
-      ))}
-      {!currentUser ? (
-        <>
-          <NavLink
-            to="/tuiter/login"
-            className="list-group-item list-group-item-action"
-            activeClassName="active" 
-          >
-            <FontAwesomeIcon icon={faUser} className="me-2" />
-            Login
-          </NavLink>
-          <NavLink
-            to="/tuiter/register"
-            className="list-group-item list-group-item-action"
-            activeClassName="active"
-          >
-            <FontAwesomeIcon icon={faUser} className="me-2" />
-            Register
-          </NavLink>
-        </>
-      ) : (
-        <NavLink
-          to="/tuiter/profile"
-          className="list-group-item list-group-item-action"
-          activeClassName="active" 
-        >
-          <FontAwesomeIcon icon={faUser} className="me-2" />
-          Profile
-        </NavLink>
-      )}
+    {links.map((link) => (
+      <Link to={`/tuiter/${link}`} className={`text-capitalize list-group-item list-group-item-action d-flex align-items-center ${active === link ? "active" : ""}`} key={link}>
+        <FontAwesomeIcon icon={icons[link]} />
+        <div className="d-none d-xl-block d-xxl-block ps-2">{link}</div>
+      </Link>
+    ))}
+      {currentUser &&
+      <Link className={`list-group-item text-capitalize ${active === "profile" ? "active" : ""}`} to="/tuiter/profile">
+        <FontAwesomeIcon icon={faUser} className="me-2" />
+        <span className="d-none d-xl-inline-block">Profile</span>
+      </Link>}
+      {!currentUser && 
+      <Link className={`list-group-item text-capitalize ${active === "login" ? "active" : ""}`} to="/tuiter/login">
+        <FontAwesomeIcon icon={faUser} className="me-2" />
+        <span className="d-none d-xl-inline-block">Login</span>
+      </Link>}
+      {!currentUser && 
+      <Link className={`list-group-item text-capitalize ${active === "register" ? "active" : ""}`} to="/tuiter/register">
+        <FontAwesomeIcon icon={faUser} className="me-2" />
+        <span className="d-none d-xl-inline-block">Register</span>
+      </Link>}
     </div>
   );
 };
 
 export default NavigationSidebar;
+
+
