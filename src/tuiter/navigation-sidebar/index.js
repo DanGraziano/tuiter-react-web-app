@@ -30,19 +30,19 @@ const NavigationSidebar = () => {
       </Link>
     ))}
       {currentUser &&
-      <Link className={`list-group-item text-capitalize ${active === "profile" ? "active" : ""}`} to="/tuiter/profile">
+      <Link className={`text-capitalize list-group-item list-group-item-action d-flex align-items-center ${active === "profile" ? "active" : ""}`} to="/tuiter/profile">
         <FontAwesomeIcon icon={faUser} className="me-2" />
-        <span className="d-none d-xl-inline-block">Profile</span>
+        <span className="d-none d-xl-block d-xxl-block">Profile</span>
       </Link>}
       {!currentUser && 
-      <Link className={`list-group-item text-capitalize ${active === "login" ? "active" : ""}`} to="/tuiter/login">
+      <Link className={`text-capitalize list-group-item list-group-item-action d-flex align-items-center ${active === "login" ? "active" : ""}`} to="/tuiter/login">
         <FontAwesomeIcon icon={faUser} className="me-2" />
-        <span className="d-none d-xl-inline-block">Login</span>
+        <span className="d-none d-xl-block d-xxl-block">Login</span>
       </Link>}
       {!currentUser && 
-      <Link className={`list-group-item text-capitalize ${active === "register" ? "active" : ""}`} to="/tuiter/register">
+      <Link className={`text-capitalize list-group-item list-group-item-action d-flex align-items-center ${active === "register" ? "active" : ""}`} to="/tuiter/register">
         <FontAwesomeIcon icon={faUser} className="me-2" />
-        <span className="d-none d-xl-inline-block">Register</span>
+        <span className="d-none d-xl-block d-xxl-block">Register</span>
       </Link>}
     </div>
   );
