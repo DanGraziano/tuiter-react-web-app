@@ -12,6 +12,7 @@ function ProfileScreen() {
  const save = async () => { await dispatch(updateUserThunk(profile)); 
 };
 
+/*
  useEffect(async () => {
    const loadProfile = async () => {
      const { payload } = await dispatch(profileThunk());
@@ -19,6 +20,26 @@ function ProfileScreen() {
    };
    loadProfile();
  }, [dispatch]);
+ */
+
+ /*
+ useEffect(  () => {
+  dispatch(profileThunk())
+}, []);
+*/
+
+const loadProfile = async () => {
+  try {
+    const { payload } = await dispatch(profileThunk());
+    setProfile(payload);
+  } catch (error) {
+    console.log("loadProfile Error: ", error);
+  }
+};
+
+useEffect(() => {
+  loadProfile();
+}, []);
 
  return (
     <div>
