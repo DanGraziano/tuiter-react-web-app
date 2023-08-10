@@ -23,7 +23,6 @@ return response;
 
 export const updateUser = async (user) => {
     console.log(user);
-//const response = await api.put(`${USERS_URL}/${user._id}`, user);
 const response = await api.put(`${USERS_URL}/update/${user._id}`, {user});
 return response.data;
 };
